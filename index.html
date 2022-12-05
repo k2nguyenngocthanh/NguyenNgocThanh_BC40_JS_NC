@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container py-5">
+        <div class="form-group">
+          <label >Nhập Ngày</label>
+          <input type="text"
+            class="form-control"  id="ngay" >
+        </div>
+  
+        <div class="form-group">
+          <label >Nhập tháng</label>
+          <input type="text"
+            class="form-control"  id="thang" >
+        </div>
+  
+        <div class="form-group">
+          <label >Nhập năm</label>
+          <input type="text"
+            class="form-control"  id="nam" >
+        </div>
+
+
+            
+      
+            <button class="btn btn-success float-right ml-4 " onclick="ngaymai()">Ngày mai</button>
+            <div id="mai" > </div>
+
+            <div class=" clearfix">
+                   
+                <button class="btn btn-success  ml-4" onclick="ngayhomqua()">Ngày hôm qua</button>
+            <div id="hqua" > </div>
+               
+            </div>
+       
+      
+
+      </div>
+
+      <h2 class="text-center">-----------------------------------------------------------------</h2>
+      <h1>Bài tập 2</h1>
+
+      <div class="container">
+        <div class="form-group">
+          <label >Nhập tháng</label>
+          <input type="text"
+            class="form-control"  id="txt-thang" >
+        </div>
+  
+        <div class="form-group">
+          <label >Nhập năm</label>
+          <input type="text"
+            class="form-control"  id="txt-nam" >
+        </div>
+
+        <button class="btn btn-success" onclick="demngay()">Đếm số ngày</button>
+        <div id="dem" > </div>
+
+      </div>
+
+      <h2 class="text-center">-----------------------------------------------------------------</h2>
+      <h1>Bài tập 3</h1>
+      <div class="container" py-5>
+        <div class="form-group">
+            <label for="">Nhập số có 3 chữ số </label>
+            <input type="text"
+              class="form-control" name="" id="nhap-so" >
+          </div>
+        
+          <button class="btn btn-danger" onclick="cachdoc()">Đọc số</button>
+          <div class="mothang" style="display: flex;">
+            <div  id="docso" style="margin: right;"> </div>
+            <div  id="sochuc"  style="margin: right;"></div>
+            <div id="sodonvi"  style="margin: right;"></div>
+          </div>
+         
+
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
