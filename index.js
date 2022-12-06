@@ -170,10 +170,50 @@ function cachdoc(){
         case 9:docvi=document.getElementById("sodonvi").innerHTML=`<h2 class="mt-5 text-danger text-center">chín  </h2>`;break;
       }
 
-   
+
+ }
+
+ /*----------------Bài 4----------------*/
+ function timKC(){
+    var hoten1=document.getElementById("txt-tenmot").value;
+    var x1=document.getElementById("toado-x1").value*1;
+    var y1=document.getElementById("toado-y1").value*1;
+
+    var hoten2=document.getElementById("txt-tenhai").value;
+    var x2=document.getElementById("toado-x2").value*1;
+    var y2=document.getElementById("toado-y2").value*1;
+
+    var hoten3=document.getElementById("txt-tenba").value*1;
+    var x3=document.getElementById("toado-x3").value*1;
+    var y3=document.getElementById("toado-y3").value*1;
 
 
+    var x4=document.getElementById("toado-x4").value*1;
+    var y4=document.getElementById("toado-y4").value*1;
 
+    var KC1 = Math.sqrt((x4-x1)*(x4-x1) +(y4-y1)*(y4-y1));
+    console.log("🚀 ~ file: index.js:195 ~ timKC ~ KC1", KC1)
+
+    var KC2 = Math.sqrt((x4-x2)*(x4-x2) +(y4-y2)*(y4-y2));
+    console.log("🚀 ~ file: index.js:198 ~ timKC ~ KC2 ", KC2 )
+
+    var KC3 = Math.sqrt((x4-x3)*(x4-x3) +(y4-y3)*(y4-y3));
+    console.log("🚀 ~ file: index.js:201 ~ timKC ~  KC3",  KC3)
+
+    if(KC1>=KC2 && KC1>=KC3){
+
+        KCxanhat=document.getElementById("tim").innerHTML=`<h2 class="mt-5 text-danger text-center">
+            Sinh viên có khoảng cách xa nhất là: ${hoten1} </h2>`;
+    }
+    else if(KC2>=KC1 && KC2>=KC1){
+        KCxanhat=document.getElementById("tim").innerHTML=`<h2 class="mt-5 text-danger text-center">
+        Sinh viên có khoảng cách xa nhất là:  ${hoten2} </h2>`;
+    }
+    else{
+        KCxanhat=document.getElementById("tim").innerHTML=`<h2 class="mt-5 text-danger text-center">
+        Sinh viên có khoảng cách xa nhất là:  ${hoten3} </h2>`;
+    }
+    
 
  }
 

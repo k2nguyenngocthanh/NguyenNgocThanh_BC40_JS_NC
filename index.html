@@ -69,7 +69,7 @@
 
       <h2 class="text-center">-----------------------------------------------------------------</h2>
       <h1>Bài tập 3</h1>
-      <div class="container" py-5>
+      <div class="container py-5">
         <div class="form-group">
             <label for="">Nhập số có 3 chữ số </label>
             <input type="text"
@@ -78,14 +78,87 @@
         
           <button class="btn btn-danger" onclick="cachdoc()">Đọc số</button>
           <div class="mothang" style="display: flex;">
-            <div  id="docso" style="margin: right;"> </div>
-            <div  id="sochuc"  style="margin: right;"></div>
-            <div id="sodonvi"  style="margin: right;"></div>
+            <div  id="docso" style="margin-right:10px;"> </div>
+            <div  id="sochuc"  style="margin-right:10px;"></div>
+            <div id="sodonvi"  style="margin-right:10px;"></div>
           </div>
-         
-
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
+
+        <h2 class="text-center">-----------------------------------------------------------------</h2>
+      <h1>Bài tập 4</h1>
+
+      <div class="container py-5 ">
+        <!--Sinh vien 1-->
+        <form>
+          <label for=""> Sinh viên thứ nhất</label>
+          <div class="row">
+           
+            <div class="col">
+              <input type="text" id="txt-tenmot" class="form-control" placeholder="Họ và tên">
+            </div>
+            <div class="col">
+              <input type="text" id="toado-x1" class="form-control" placeholder="Tọa độ X">
+            </div>
+            <div class="col">
+              <input type="text" id="toado-y1" class="form-control" placeholder="Tọa độ Y">
+            </div>
+          </div>
+        </form>
+
+          <!--Sinh vien 2-->
+          <form>
+            <label for=""> Sinh viên thứ hai</label>
+            <div class="row">
+             
+              <div class="col">
+                <input type="text" id="txt-tenhai" class="form-control" placeholder="Họ và tên">
+              </div>
+              <div class="col">
+                <input type="text" id="toado-x2" class="form-control" placeholder="Tọa độ X">
+              </div>
+              <div class="col">
+                <input type="text" id="toado-y2" class="form-control" placeholder="Tọa độ Y">
+              </div>
+            </div>
+          </form>
+
+            <!--Sinh vien 3-->
+        <form>
+          <label for=""> Sinh viên thứ ba</label>
+          <div class="row">
+           
+            <div class="col">
+              <input type="text" id="txt-tenba" class="form-control" placeholder="Họ và tên">
+            </div>
+            <div class="col">
+              <input type="text" id="toado-x3" class="form-control" placeholder="Tọa độ X">
+            </div>
+            <div class="col">
+              <input type="text" id="toado-y3" class="form-control" placeholder="Tọa độ Y">
+            </div>
+          </div>
+        </form>
+
+              <!--Khoảng cách trường học-->
+        <form>
+          <label for=""> Trường học</label>
+          <div class="row">
+            <div class="col">
+              <input type="text" id="toado-x4" class="form-control" placeholder="Tọa độ X">
+            </div>
+            <div class="col">
+              <input type="text" id="toado-y4" class="form-control" placeholder="Tọa độ Y">
+            </div>
+          </div>
+        </form>
+
+        <br>
+        
+        <button  class="btn btn-success " onclick="timKC()">Tìm</button>
+        <div id="tim" > </div>
+        
+
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
